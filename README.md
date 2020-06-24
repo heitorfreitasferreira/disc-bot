@@ -10,7 +10,6 @@ Para adicionar o bot no seu servidor basta convidar por [esse link](https://disc
 
 Basta ter o programa do discord instalado em qualquer plataforma, e ter ou gerenciar um servidor
 
-
 ## Processo de Deploy
 
 Quando finalizado o bot será hospedado no heroku
@@ -20,8 +19,6 @@ Quando finalizado o bot será hospedado no heroku
 * [Node](https://nodejs.org/en/) - O Linguagem utilizada
 * [NPM](https://www.npmjs.com/) - Gerenciamento de dependências
 * [DiscordJS](https://discord.js.org/) - Biblioteca utilizada para conectar com o Discord
-
-
 
 ## Autores
 
