@@ -11,8 +11,6 @@ const localVars = process.env //abreviação
 const bot = new Discord.Client()
 bot.commands = new Discord.Collection();
 //Importando bibliotecas
-bot.queues = new Map();
-
 
 const commandFiles = fs
   .readdirSync(path.join(__dirname, "/commands"))
@@ -33,7 +31,7 @@ bot.on("ready", () => {
 
 bot.on("message", (msg) => {
   if (!msg.content.startsWith(localVars.PREFIX) || msg.author.bot) return
-  const args = msg.content.slice(localVars.PREFIX.length).split(" ") //array com as palavras separadas por espaço
+  const args = msg.content.slice(localVars.PREFIX.length + 1).split(" ") //array com as palavras separadas por espaço
   const command = args.shift() //remove o primeiro item do array args e coloca em command, que é qual ação será executada pelo bot
   try {
     bot.commands.get(command).execute(bot, msg, args)
