@@ -1,5 +1,7 @@
 const execute = (bot, msg, args) => {
-  return msg.reply("Hello")
+  // console.log(msg);
+  return msg.reply("oi neh \n   😳\n👉👈")
+
 }
 
 module.exports = {
